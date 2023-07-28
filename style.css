@@ -1,0 +1,92 @@
+.hidden{
+    display: none;
+}
+
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://source.unsplash.com/random/2560x1440/?travel");
+    height: 100vh;
+    position: relative;
+    display: flex;
+    color: white;
+    text-align: center;
+}
+
+#quote{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#quote :first-child{
+    font-size: 24px;
+}
+
+#quote :last-child{
+    font-size: 22px;
+}
+
+#greeting{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 46px;
+}
+
+#clock{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+}
+
+#login-form, #todo-form input[type="text"], #todo-list{
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    outline: none;
+    text-align: center;
+    caret-color: white;
+    color: white;
+}
+
+
+#login-form input[type="text"]{
+    font-size: 35px;
+    top: 15%;
+}
+
+#todo-form input[type="text"]{
+    padding: 5px;
+    border-bottom: 2px solid white;
+    width: 300px;
+    font-size: 20px;
+    top: 25%;
+}
+
+#todo-list{
+    position: absolute;
+    margin-top: 30%;
+    font-size: 20px;
+}
+
+#login-form, #todo-form input[type="text"]:focus::placeholder {
+    color: transparent;
+}
+
+#login-form input[type="text"]::placeholder::before {
+    content: "";
+    color: white;
+    display: inline-block;
+    width: 0;
+}
+
+#todo-form input[type="text"]::placeholder {
+    color: white;
+}
+
